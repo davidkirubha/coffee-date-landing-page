@@ -1,0 +1,384 @@
+<section class="navbar">
+    <nav>
+        <h2>COFFEE-DATES</h2>
+        <div class="links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Feedback</a>
+        </div>
+    </nav>
+</section>
+<section class="hero-section">
+    <div class="hero">
+        <h1>Fresh Coffee Happy Moments</h1>
+        <p class="gray">start your day with great coffee</p>
+        <button>ORDER NOW</button>
+    </div>
+<img src="coffee.jpg">
+</section>
+<section class="features">
+    <h1>OUR MENU</h1>
+    <div class="feature">
+        <div class="cardwrapper">
+        <div class="card">
+            <img src="card-coffe1.jpg" alt="coffee kudi" width="250px" height="180px">
+            <p>LATEE</p>
+            <p>$150</p>
+            <button class="drink">Order</button>
+        </div>
+        </div>
+        <div class="cardwrapper">
+         <div class="card">
+            <img src="card-coffe2.jpg" alt="coffee kudi" width="250px" height="180px">
+            <p>ESPRESSO</p>
+            <p>$150</p>
+            <button class="drink">Order</button>
+        </div></div>
+        <div class="cardwrapper">        <div class="card">
+            <img src="card-coffe3.jpg" alt="coffee kudi" width="250px" height="180px">
+            <p>MOCHA</p>
+            <p>$150</p>
+            <button class="drink">Order</button>
+        </div>
+        </div>
+    </div>
+</section>
+<section class="choose">
+    <h2>WHY US?</h2>
+    <div class="card2">
+    <div class="whyus">
+        <p>🤎 Fresh Bean</p>
+    </div>
+    <div class="whyus">
+        <p> ✨fresh food </p>
+    </div>
+    <div class="whyus">
+        <p>☕cozy</p>
+    </div>
+</div>
+</section>
+<footer>
+<p>@2026 CoffeeDate </p>
+</footer>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+   .links a:hover{
+    color: blueviolet;
+    cursor: pointer;
+   }
+    .hero button{
+transition: 0.3s;
+    }
+    .hero button:hover{
+transform:translateY(-5px) scale(1.1);
+    }
+    .choose h2{
+        font-size: 28px;
+        margin-bottom: 10px;
+        text-align: center;
+        color: white;
+    }
+    .choose h2{
+        margin-bottom: 15px;
+    }
+    .choose{
+        padding: 40px;
+        background:linear-gradient(to top right, maroon,black);
+        
+    }
+    .card2{
+   max-width: 100px;
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   gap: 30px;
+   align-items: center;
+   position: relative;
+   left: 300px;
+    }
+    .whyus p{
+       
+        font-size: 18px;
+    }
+    .whyus{
+        transition: 0.3s;
+    }
+    @keyframe move{
+          0%{
+            opacity: 0.5;
+            transform: translateY(30px);
+          }
+          100%{
+              opacity: 1;
+            transform: translateY(0);
+          }
+    }
+    .whyus:hover{
+        cursor: pointer;
+        transform:translateY(-5px) scale(1.1);
+    }
+    .whyus{
+        animation: move 2s;
+    }
+    .whyus{
+        text-align: center;
+        width: 250px;
+        padding: 20px 20px;
+        border: none;
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0 0 20px gray;
+    }
+    @keyframes appear{
+          0%{
+            opacity: 0.5;
+            transform: translateY(30px);
+          }
+          100%{
+              opacity: 1;
+            transform: translateY(0);
+          }
+    }
+    
+    @keyframes reveal{
+          0%{
+            opacity: 0.5;
+            transform: translateX(30px);
+          }
+          100%{
+              opacity: 1;
+            transform: translateX(0);
+          }
+    }
+    @keyframes card{
+          0%{
+            opacity: 0;
+            transform: translateY(100px);
+          }
+          100%{
+              opacity: 1;
+            transform: translateY(0);
+          }
+    }
+    .card button{
+        transition: 0.3s;
+    }
+    .card button:hover{
+        cursor: pointer;
+        transform:translateY(-5px) scale(1.1);
+    }
+    .feature img{
+        transition: 0.3s;
+        overflow: hidden;
+        object-fit: cover;
+    }
+    .feature img:hover{
+transform: scale(1.1);
+    }
+    .cardwrapper{ 
+         animation: card  ease;
+         animation-timeline:view();
+         animation-range: entry 0% cover 50%;
+    }
+    .hero-section img{
+          animation: reveal 2s ease;
+    }
+    .hero{
+        animation: appear 2s ease;
+    }
+
+    .features{
+        background: radial-gradient(circle,gray,black);
+        padding: 50px 80px;
+    }
+    .features h1{
+            font-size: 28px;
+            text-align: center;
+            color: gold;
+            margin-bottom: 20px;
+    }
+    .card img{
+        object-fit: cover;
+    }
+    .card{
+        transition: 0.3s;
+    }
+    .card:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+    .card{
+        padding: 20px;
+        border: none;
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0 0 20px gray;
+    }
+    .card p{
+        margin: 10px;
+    }
+    .card{
+        text-align: center;
+    }
+    .card button{
+        padding: 10px 12px;
+        color: white;
+        background-color: brown;
+        border: none;
+        border-radius: 15px;
+        background: brown;
+        box-shadow: 0 0 10px brown;
+    }
+    .feature{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 40px;
+        margin:50px;
+        
+    }
+    
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .links{
+        display: flex;
+        gap: 25px;
+    }
+    .hero-section{
+        min-height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .hero h1{
+        font-size: 50px;
+        margin-bottom: 15px;
+        color: darkorchid;
+    }
+    .hero{
+        max-width: 500px;
+    }
+    .gray{
+        font-size: 18px;
+        color: gray;
+    }
+    .hero button{
+        text-decoration: none;
+        padding: 10px 12px;
+        border: none;
+        background: brown;
+        color: white;
+        margin-top: 20px;
+        border-radius: 15px;
+        box-shadow: 0 0 20px brown;
+    }
+    .card p{
+        font-size: 18px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .hero-section img{
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+    }
+    .navbar{
+        background-color: brown;
+        color: white;
+        padding:30px ;
+    }
+    .links a{
+        text-decoration: none;
+        color: beige;
+    }
+    .hero-section{
+        background:linear-gradient(to right,beige,khaki) ;
+    }
+    footer{
+        background-color: black;
+        color:white ;
+        text-align: center;
+        padding:20px 40px ;
+    }
+    @media  (max-width:700px) {
+       nav {
+        flex-direction: column;
+        gap: 15px;
+    } 
+    .hero-section{
+        flex-direction: column;
+    }
+.hero button{
+    margin-bottom: 10px;
+}
+    }
+    @media (max-width:600px){
+        @media (max-width:600px){
+
+    .feature{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 20px 0;
+        left: 0;
+        gap: 30px;
+    }
+
+    .cardwrapper{
+        width: 100%;
+    }
+
+    .card{
+        width: 100%;
+    }
+
+    .card img{
+        width: 100%;
+        height: 180px;
+    }
+}
+@media (max-width:600px){
+
+    .feature{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 20px 0;
+        left: 0;
+        gap: 30px;
+    }
+
+    .cardwrapper{
+        width: 100%;
+    }
+
+    .card{
+        width: 100%;
+    }
+
+    .card img{
+        width: 100%;
+        height: 180px;
+    }
+
+    .card2{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: none;
+        left: 0;
+        gap: 25px;
+    }
+
+    .whyus{
+        width: 100%;
+    }
+}
+    }
+</style>
